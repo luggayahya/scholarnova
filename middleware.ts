@@ -15,20 +15,6 @@ export async function middleware(req: NextRequest) {
     return NextResponse.redirect(new URL('/login', req.url));
   }
 
-  if (session) {
-    const { data: profile } = await supabase
-      .from('profiles')
-      .select('role')
-      .eq('id', session.user.id)
-      .single();
-
-    const role = profile?.role || 'user';
-
-    if (req.nextUrl.pathname.startsWith('/admin') && role !== 'founder') {
-      return NextResponse.redirect(new URL('/dashboard', req.url));
-    }
-  }
-
   return res;
 }
 
