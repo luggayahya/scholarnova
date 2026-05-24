@@ -1,0 +1,32 @@
+{
+  "name": "scholarnova",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev --turbo",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "test": "vitest run",
+    "db:push": "prisma db push",
+    "db:migrate": "prisma migrate dev",
+    "db:generate": "prisma generate"
+  },
+  "dependencies": {
+    "next": "15.2.4",
+    "react": "19.0.0-rc-65a56d0e-20241020",
+    "react-dom": "19.0.0-rc-65a56d0e-20241020",
+    "@supabase/supabase-js": "^2.45.4",
+    "@supabase/ssr": "^0.5.0",
+    "@prisma/client": "^5.15.0",
+    "prisma": "^5.15.0",
+    "stripe": "^16.0.0",
+    "openai": "^4.52.0",
+    "zod": "^3.23.8",
+    "framer-motion": "^11.3.0",
+    "tailwind-merge": "^2.4.0",
+    "class-variance-authority": "^0.7.0",
+    "lucide-react": "^0.441.0",
+    "sonner": "^1.5.0"
+  }
+}
