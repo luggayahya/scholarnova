@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "test": "vitest run",
     "db:push": "prisma db push",
     "db:migrate": "prisma migrate dev",
     "db:generate": "prisma generate"
@@ -26,7 +25,6 @@
     "framer-motion": "^11.3.0",
     "tailwind-merge": "^2.4.0",
     "class-variance-authority": "^0.7.0",
-    "lucide-react": "^0.441.0",
-    "sonner": "^1.5.0"
+    "lucide-react": "^0.441.0"
   }
 }
